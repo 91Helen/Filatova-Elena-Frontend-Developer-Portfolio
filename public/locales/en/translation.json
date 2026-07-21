@@ -1,0 +1,112 @@
+{
+  "navbar": {
+    "brand": {
+    "first": "Filatova",
+    "last": "Elena"
+  },
+    "home": "Home",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "banner": {
+    "downloadResume": "Download Resume",
+  "resumeFile": "/resume/resume_en.pdf",
+    "tagline": "Welcome to my Portfolio",
+    "greeting": "Hello, I'm Elena, and I'm a",
+    "role": "Frontend Developer",
+    "description": "I specialize in building responsive, user-friendly web applications with React/Node/Redux. I enjoy creating clean code, intuitive interfaces, and modern designs. I am eager to contribute my skills to a professional team and grow as a developer through new challenges and exciting projects.",
+    "downloadCv": "Download CV",
+    "recommendationLetter": "Recommendation Letter"
+  },
+  "projects": {
+  "title": "My Projects",
+  "description": "Here are some of the projects I’ve built using React, Redux, Node, APIs and modern front-end tools.",
+  "seeMore": "See More Projects",
+  "seeLess": "See Less",
+  "github": "GitHub",
+  "netlify": "Netlify"
+},
+"projects_data": {
+  "idiomFlow": {
+    "title": "IdiomFlow",
+    "description": "A Full-stack React app for mastering English idioms, featuring Auth0 authentication, a personalized user dashboard, gamified quizzes, and a global leaderboard."
+  },
+  "recipeApp": {
+    "title": "Recipe App",
+    "description": "React web app for searching recipes by keywords (ingredients or dish name) using the Edamam Recipe API."
+  },
+  "nutritionApp": {
+    "title": "Nutrition Analysis App",
+    "description": "The app uses the Edamam Recipe API and displays a list of recipes with calories, images, and ingredients."
+  },
+  "mealPlan": {
+    "title": "Weekly Meal Plan Ideas",
+    "description": "The app allows users to create, update, and manage weekly meal plans with ingredients. An example of building an interactive, user-friendly interface with real-world use cases."
+  },
+  "feniks": {
+    "title": "Speech therapy center FENIKS",
+    "description": "A responsive, modern landing page for a speech therapy center."
+  },
+  "phrasalVerb": {
+    "title": "Phrasal Verb Trainer",
+    "description": "Interactive, fully responsive web application for learning and practicing English phrasal verbs."
+  },
+  "psychologist": {
+    "title": "Psychologist Landing Page",
+    "description": "Ready, fully functional, responsive Psychologist Landing Page."
+  },
+  "clothingStore": {
+    "title": "Online Clothing Store",
+    "description": "An online clothing store with category filtering (Dresses, Pants, Skirts, Shoes, Shirts)."
+  }
+  },
+  
+  "skills": {
+    "title": "Technical Expertise",
+    "subtitle": "Passionate Web Developer & Tech Creator",
+    "description": "With a focus on building scalable full-stack applications...",
+    "certificates": "Certificates",
+    "experience": "Experience",
+    "experience_items": {
+      "al_tech": {
+        "role": "Frontend Developer",
+        "company": "AL Tech Labs LTD",
+        "location": "Digital Agency, Montreal, Canada",
+        "period": "February – June 2026",
+        "points": [
+          "Contributed to UI/UX design and built a design system that cut layout time by 50%.",
+          "Implemented Feature-Sliced Design (FSD) architecture for modular, scalable code.",
+          "Designed business logic, including component structure and state management.",
+          "Built a content management service on the MERN stack with Redux.",
+          "Optimized styles with SASS/SCSS to improve CSS structure and maintainability.",
+          "Ensured mobile and cross-browser compatibility across devices."
+        ]
+      }
+    }
+  }, 
+  "contact": {
+    "title": "Get In Touch",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "phone": "Phone No.",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending...",
+    "successTitle": "Success!",
+    "successText": "Message sent successfully.",
+    "errorTitle": "Oops...",
+    "errorText": "Something went wrong. Please try again later.",
+    "networkErrorTitle": "Error!",
+    "networkErrorText": "Failed to send message. Try again later.",
+   "phoneError": "Please enter only numbers",
+   "emailError": "Please enter a valid email address"
+  },
+  "footer": {
+    "rights": "All Rights Reserved"
+  },
+  "loader": {
+    "loading": "Loading..."
+  }
+}

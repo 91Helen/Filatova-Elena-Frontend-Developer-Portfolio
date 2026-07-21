@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Poppins:wght@300;400;600&display=swap');
+
+/**************************************************************
+ * 1. VARIABLES 
+ **************************************************************/
+:root {
+  --font-main: "Centra", "Poppins", sans-serif;
+  --color-bg: #121212;
+  --color-white: #ffffff;
+  --color-violet: #caa3ff;
+  --color-accent: #8b3395;
+  --color-success: #008000;
+  --transition-base: 0.3s ease;
+  --shadow-glow: 0 0 22px rgba(178, 131, 255, 0.8);
+}
+
+/**************************************************************
+ * 2. DEFAULT STYLES
+ **************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  position: relative;
+  background-color: var(--color-bg) !important;
+  color: var(--color-white) !important;
+  font-family: var(--font-main) !important;
+  font-weight: 400;
+  overflow-x: hidden;
+  transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/**************************************************************
+ * 3. GENERAL SECTIONS (Добавлено из старого проекта)
+ **************************************************************/
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-anchor {
+  scroll-margin-top: 90px;
+}
+
+/**************************************************************
+ * 4. GLOBAL ANIMATIONS (Собраны все из старого и нового)
+ **************************************************************/
+@keyframes glow {
+  0% { filter: drop-shadow(0 0 0px rgba(178, 131, 255, 0)); }
+  50% { filter: drop-shadow(0 0 25px rgba(178, 131, 255, 0.9)); }
+  100% { filter: drop-shadow(0 0 0px rgba(178, 131, 255, 0)); }
+}
+
+@keyframes updown {
+  0%, 100% { transform: translateY(-20px); }
+  50% { transform: translateY(20px); }
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 20px rgba(108, 99, 255, 0.5), 0 0 40px rgba(155, 89, 182, 0.4); }
+  50% { box-shadow: 0 0 30px rgba(108, 99, 255, 0.7), 0 0 60px rgba(155, 89, 182, 0.6); }
+  100% { box-shadow: 0 0 25px rgba(108, 99, 255, 0.6), 0 0 50px rgba(155, 89, 182, 0.5); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/**************************************************************
+ * 5. UTILITY CLASSES
+ **************************************************************/
+.white { color: var(--color-white); text-shadow: 0 0 14px rgba(255, 255, 255, 0.4); }
+.violet { color: var(--color-violet); text-shadow: var(--shadow-glow); }
+
+/**************************************************************
+ * 6. RESPONSIVE — LARGE SCREENS & GENERAL LAYOUT
+ **************************************************************/
+@media (min-width: 1700px) {
+  main .container {
+    max-width: 100%;
+    padding: 0 150px;
+  }
+}
+
+@media (max-width: 991px) {
+  section, #skills, #projects {
+    display: block;
+    height: auto !important;
+    min-height: auto;
+    padding-top: 10px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .row, .container {
+    height: auto !important;
+    min-height: auto !important;
+  }
+}
+
+@media (max-width: 576px) {
+  section, #skills, #projects {
+    padding-top: 0px !important;
+    padding-bottom: 40px !important;
+  }
+}

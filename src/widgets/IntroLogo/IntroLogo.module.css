@@ -1,0 +1,30 @@
+.introLogo {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #371844 0%, #000 100%);
+  opacity: 0;
+  overflow: hidden;
+}
+
+.introLogoImg {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.6));
+  animation: glow 4s ease-in-out infinite;
+}
+
+.introName {
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  display: flex;
+  gap: 8px;
+}

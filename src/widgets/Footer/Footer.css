@@ -1,0 +1,89 @@
+.footer {
+  padding: 0 0 50px 0;
+  background-image: url('@/shared/assets/img/footer-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer p {
+  margin-top: 20px;
+  color: #b8b8b8;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.footer-brand-text {
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  transition: color var(--transition-base);
+}
+
+.footer-brand-white {
+  color: var(--color-white);
+}
+
+.footer-brand-accent {
+  color: var(--color-accent);
+}
+
+.footer-social-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+  background: linear-gradient(135deg, #aa367c, #4a2fbd);
+  color: #fff;
+  transform: scale(1.1);
+}
+
+p.success {
+  color: var(--color-success);
+}
+.footer img {
+  width: 130px;
+  height: 130px;
+  object-fit: contain; 
+}
+
+@media (max-width: 991px) {
+  .footer-social-icons {
+    justify-content: flex-end;
+  }
+
+  .footer-social-icons a {
+    width: 45px;
+    height: 45px;
+    font-size: 21px;
+  }
+
+  .footer-brand-text {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-social-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}

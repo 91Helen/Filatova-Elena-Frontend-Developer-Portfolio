@@ -1,0 +1,78 @@
+.bubbles-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  pointer-events: none;
+  overflow: hidden;
+  mix-blend-mode: screen;
+  transform: translate(var(--mx, 0), var(--my, 0));
+  transition: transform 0.12s ease-out;
+}
+
+.bubbles-bg span {
+  position: absolute;
+  left: var(--left);
+  bottom: -12%;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    hsla(var(--hue), 95%, 85%, 0.95),
+    hsla(var(--hue), 85%, 60%, 0.55) 40%,
+    hsla(var(--hue), 90%, 55%, 0.18) 65%,
+    transparent 72%
+  );
+  box-shadow: 0 0 18px hsla(var(--hue), 100%, 70%, 0.45),
+              inset 0 0 10px hsla(var(--hue), 100%, 95%, 0.55);
+  filter: blur(0.2px);
+  will-change: transform, opacity;
+  animation: bubble-rise var(--duration) linear infinite;
+  animation-delay: var(--delay);
+}
+
+.bubbles-bg span::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle at 65% 35%, rgba(255, 255, 255, 0.6), transparent 35%),
+              radial-gradient(circle at 35% 70%, rgba(255, 255, 255, 0.25), transparent 40%);
+  mix-blend-mode: screen;
+}
+
+@keyframes bubble-rise {
+  0% {
+    transform: translate3d(calc(-10px * var(--depth)), 0, 0) scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  60% {
+    opacity: 0.95;
+    transform: translate3d(
+      calc(20px * var(--depth)),
+      calc(-60vh * (0.8 + var(--depth))),
+      0
+    ) scale(1.03);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(
+      calc(-10px * var(--depth)),
+      calc(-120vh * (0.8 + var(--depth))),
+      0
+    ) scale(1.05);
+  }
+}
+
+@media (max-width: 576px) {
+  .bubbles-bg {
+    top: auto;
+    bottom: 0;
+    height: 30%;
+    mask-image: linear-gradient(to top, transparent 0%, black 90%);
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, black 90%);
+  }
+}
