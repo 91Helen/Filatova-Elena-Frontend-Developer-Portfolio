@@ -1,4 +1,12 @@
-#  <img src="https://github.com/91Helen/portfolio-vite/blob/main/logo-light-bg.png?raw=true" width="70" style="vertical-align: middle;"   Elena Filatova — Frontend Developer Portfolio
+<h1>
+  <img src="https://github.com/91Helen/portfolio-vite/blob/main/logo-light-bg.png?raw=true" width="70" style="vertical-align: middle;"> 
+ Elena Filatova — Frontend Developer Portfolio
+</h1>
+
+![React](https://img.shields.io/badge/react-%2320232d.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![GSAP](https://img.shields.io/badge/GSAP-green?style=for-the-badge&logo=greensock&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 
 Персональное портфолио, построенное на React 18 с архитектурой **Feature-Sliced Design (FSD)**. Полностью адаптивный, многоязычный (EN/RU) сайт с плавными GSAP-анимациями, динамической загрузкой контента и оптимизированной структурой кода.
 
