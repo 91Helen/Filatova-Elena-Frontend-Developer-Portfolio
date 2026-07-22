@@ -60,3 +60,51 @@
 ---
 
 ## 🏛 Архитектура (Feature-Sliced Design)
+
+Каждый виджет инкапсулирует собственную логику, стили и разметку, что упрощает поддержку и позволяет переиспользовать компоненты независимо друг от друга.
+
+---
+
+## 🌐 Локализация
+
+Переводы вынесены в `public/locales/{en,ru}/translation.json` и подгружаются асинхронно через `i18next-http-backend`. Переключение языка доступно прямо в навигационном меню без перезагрузки страницы.
+
+---
+
+## 🚀 Запуск проекта локально
+
+```bash
+# Клонировать репозиторий
+git clone https://github.com/91Helen/Filatova-Elena-Frontend-Developer-Portfolio.git
+
+# Перейти в директорию проекта
+cd Filatova-Elena-Frontend-Developer-Portfolio
+
+# Установить зависимости
+npm install
+
+# Запустить dev-сервер
+npm run dev
+```
+Проект будет доступен по адресу `http://localhost:3000`.
+
+### Другие команды
+
+```bash
+npm run build     # сборка production-версии
+npm run preview   # предпросмотр production-сборки
+npm run lint      # проверка кода ESLint
+```
+
+---
+
+## 📬 Контакты
+
+- **Telegram:** [@elenafeela](https://t.me/elenafeela)
+- **Instagram:** [@elena_feela_](https://www.instagram.com/elena_feela_/)
+- **Email:** filatovae047@gmail.com
+
+---
+<p align="center">
+  <strong>With love, Elena ❤️</strong>
+</p>
