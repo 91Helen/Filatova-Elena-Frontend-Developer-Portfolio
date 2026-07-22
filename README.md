@@ -10,7 +10,7 @@
 
 Персональное портфолио, построенное на React 18 с архитектурой **Feature-Sliced Design (FSD)**. Полностью адаптивный, многоязычный (EN/RU) сайт с плавными GSAP-анимациями, динамической загрузкой контента и оптимизированной структурой кода.
 
-🔗 **Live demo:** [elena-filatova-portfolio.netlify.app](https://elena-filatova-portfolio.netlify.app)
+🔗 **Live demo:** [filatova-elena-frontend-dev-portfolio.netlify.app)
 
 ---
 
