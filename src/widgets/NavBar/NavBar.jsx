@@ -45,14 +45,23 @@ export const NavBar = () => {
       onToggle={(isExpanded) => setExpanded(isExpanded)}
       className={`${scrolled ? 'scrolled' : ''} ${!visible ? 'navbar--hidden' : ''}`}
     >
-      <Container>
+      <Container className="d-flex align-items-center">
         <Navbar.Brand href="#home" onClick={() => setExpanded(false)}>
           <img src={logo} alt="Logo" style={{ width: '42px' }} />
           <span className="brand-text ms-2">
-           <span className="brand-white">{t('navbar.brand.first')}</span>{' '}
+            <span className="brand-white">{t('navbar.brand.first')}</span>{' '}
             <span className="brand-accent">{t('navbar.brand.last')}</span>
           </span>
         </Navbar.Brand>
+
+        <button
+          type="button"
+          className="lang-switcher"
+          onClick={toggleLanguage}
+          aria-label="Switch language"
+        >
+          {i18n.language === 'en' ? 'RU' : 'EN'}
+        </button>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <div className="custom-toggler">
@@ -76,15 +85,6 @@ export const NavBar = () => {
             <Link to="contact" spy smooth offset={-100} duration={500} className="nav-link navbar-link" activeClass="active" onClick={() => setExpanded(false)}>
               {t('navbar.contact')}
             </Link>
-
-            <button
-              type="button"
-              className="lang-switcher ms-lg-3"
-              onClick={toggleLanguage}
-              aria-label="Switch language"
-            >
-              {i18n.language === 'en' ? 'RU' : 'EN'}
-            </button>
           </Nav>
         </Navbar.Collapse>
       </Container>

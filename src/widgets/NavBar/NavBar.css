@@ -6,6 +6,7 @@ nav.navbar {
   padding: 18px 0;
   z-index: 9999;
   background-color: transparent;
+   cursor: pointer;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
               background-color 0.3s ease,
               padding 0.3s ease !important;
@@ -36,7 +37,7 @@ nav.navbar a.navbar-brand img {
 }
 
 .brand-text {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
@@ -104,9 +105,6 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active::after {
   border-color: var(--color-accent) !important;
 }
 
-.lang-switcher {
-    order: 0;
-  }
 
 @media (min-width: 992px) {
   nav.navbar .navbar-nav .nav-link.navbar-link:hover,
@@ -123,6 +121,10 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active::after {
     height: 2px;
     background-color: var(--color-accent);
     box-shadow: 0 0 10px var(--color-accent);
+  }
+  .lang-switcher {
+    margin-left: 0;
+    margin-right: 24px;
   }
 }
 
@@ -241,6 +243,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active::after {
     height: 22px;
   }
 
+
   .toggler-icon {
     display: block;
     width: 100%;
@@ -248,5 +251,25 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active::after {
     background-color: white;
     border-radius: 3px;
     transition: all 0.3s ease-in-out;
+  }
+   .lang-switcher {
+    margin-right: 84px;
+  }
+  
+}
+
+@media (max-width: 400px) {
+  .brand-text {
+    font-size: 1rem;
+  }
+
+  nav.navbar a.navbar-brand img {
+    width: 32px;
+  }
+
+  .lang-switcher {
+    margin-right: 100px;
+    padding: 5px 10px;
+    font-size: 12px;
   }
 }
